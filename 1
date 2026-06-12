@@ -1,8 +1,1 @@
-pkg update && pkg upgrade -y
-pkg install git cmake golang -y
-git clone --depth 1 https://github.com/ollama/ollama.git
-cd ollama
-go generate ./...
-go build .
-./ollama serve &
-./ollama run hf.co/bartowski/deepseek-r1-qwen-2.5-32B-ablated-GGUF:IQ2_S
+curl -fsSL https://ollama.com/install.sh | sh
